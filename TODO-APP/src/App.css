@@ -1,42 +1,126 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.main-container {
+  height: auto;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(rgba(12, 10, 11, 0.8));
+  color: white;
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 40px;
+}
+.flex {
+  display: flex;
+  gap: 10px;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85));
+}
+li {
+  font-weight: 900;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: black;
+  list-style: none;
+}
+.cats {
+  padding: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: aquamarine;
+}
+input {
+  font-size: 20px;
+  height: 100%;
+  border-radius: 5px;
+  padding-left: 2px;
+}
+input:hover {
+  outline: 2px solid skyblue;
+}
+.add {
+  padding: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(2, 255, 6);
+  width: 100px;
+}
+.list {
+  padding: 10px;
+}
+.list-items {
+  background-color: rgba(94, 208, 218, 0.79);
+  border-radius: 5px;
+}
+span {
+  margin-left: 10px;
+}
+.icon {
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  cursor: pointer;
+  user-select: none;
+}
+.items {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+select {
+  padding: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(2, 255, 6);
+  width: 100%;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.notask {
+  text-align: center;
+  padding: 50px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.delete-button {
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.delete-button:hover {
+  color: red;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stike {
+  text-decoration: red line-through;
+  color: #393333;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.notChecked {
+  text-decoration: none;
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.user-select {
+  user-select: none;
 }
